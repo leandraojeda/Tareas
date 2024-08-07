@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Amigos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf4f4; 
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #1e90ff; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd; 
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1e90ff; 
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f8ff; 
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; 
+            border: 1px solid #dddddd; 
+            border-radius: 8px;
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #1e90ff; 
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd; 
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1e90ff; 
+            color: white;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #4682b4; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Mis Amigos</h1>
+    
+    <h2>Información de Amigos</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Estudio</th>
+            <th>Edad</th>
+            <th>Intereses</th>
+        </tr>
+        <tr>
+            <td>Pilar Melendres</td>
+            <td>Enfermería</td>
+            <td>22 años</td>
+            <td>Le encanta ayudar a los niños, dibujar y ver series coreanas</td>
+        </tr>
+        <tr>
+            <td>Isac Batallanos</td>
+            <td>Ingeniería Mecánica</td>
+            <td>23 años</td>
+            <td>Le gustan los videojuegos y el fútbol</td>
+        </tr>
+        <tr>
+            <td>Rodrigo Calvimontes</td>
+            <td>Bioquímica</td>
+            <td>20 años</td>
+            <td>Le gustan los videojuegos y los juegos de mesa</td>
+        </tr>
+    </table>
+    
+     <h2>Formulario para Nuevos Amigos</h2>
+    <form action="">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" />
+        </div>
+        <div>
+            <label for="estudio">Estudio</label>
+            <input type="text" id="estudio" name="estudio" placeholder="Área de estudio o profesión" />
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" placeholder="Edad en años" />
+        </div>
+        <div>
+            <label for="intereses">Intereses</label>
+            <textarea id="intereses" name="intereses" cols="30" rows="5" placeholder="Descríbelo aquí"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+</body>
+</html>
